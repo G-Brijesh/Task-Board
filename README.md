@@ -206,34 +206,10 @@ task-board/
 └── README.md                   # This file
 ```
 
-## 🎨 UI/UX Highlights
 
-- **Gradient Background** - Smooth blue-to-indigo gradient for modern aesthetics
-- **Color-Coded Priorities** - Red (High), Yellow (Medium), Green (Low)
-- **Smooth Transitions** - All interactions use CSS transitions for fluid experience
-- **Responsive Design** - Works on desktop and mobile devices
-- **Clear Visual Hierarchy** - Important elements stand out with proper spacing and sizing
-- **Accessible Forms** - Clear labels and focus states for keyboard navigation
-
-## 🔄 Data Persistence
-
-Tasks are stored in `tasks.json` and persist during the application session. The backend automatically saves changes to this file whenever a task is added, modified, or deleted.
-
-### Example tasks.json
-```json
-[
-  {
-    "id": 1,
-    "title": "Complete project documentation",
-    "priority": "high",
-    "completed": false,
-    "created_at": "2025-12-18T14:10:15.583199",
-    "completed_date": null
-  }
-]
 ```
 
-## 🚦 Available Scripts
+##  Available Scripts
 
 ### Frontend
 ```bash
@@ -247,48 +223,5 @@ npm run preview  # Preview production build
 python main.py   # Start Flask server on port 5001
 ```
 
-## 🐛 Troubleshooting
 
-### Tasks not loading?
-- Ensure both backend (port 5001) and frontend (port 5000) are running
-- Check browser console for error messages
-- Verify `tasks.json` file exists in project root
 
-### Frontend can't connect to backend?
-- Check that Flask server is running on port 5001
-- Verify Vite proxy is configured correctly in `vite.config.js`
-- Clear browser cache and reload
-
-### Styles not loading?
-- Run `npm install` to ensure Tailwind CSS is installed
-- Restart the development server
-- Check that `src/index.css` contains the Tailwind imports
-
-## 📊 Performance Features
-
-- **Efficient Polling** - Frontend polls backend once per second for updates
-- **Optimized Rendering** - React re-renders only affected components
-- **Minimal Dependencies** - Lean stack with no bloat
-- **Fast Build Times** - Vite's rapid development server
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙋 Support
-
-If you have questions or need help, please open an issue on GitHub.
-
----
-
-**Made with ❤️ using React, Flask, and Tailwind CSS**
