@@ -4,7 +4,8 @@ import TaskList from './components/TaskList'
 import ProgressBar from './components/ProgressBar'
 import Stats from './components/Stats'
 
-const API_BASE = 'http://localhost:5001/api'
+// Use backend API through relative path - Vite proxy handles routing
+const API_BASE = '/api'
 
 function App() {
   const [tasks, setTasks] = useState([])
